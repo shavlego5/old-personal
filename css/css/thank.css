@@ -1,0 +1,28 @@
+#thank {
+    background-color: #17202A;
+    padding: 50px 0 300px 0;
+}
+
+#thank h1 {
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+#thank p {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#thank-gif img {
+    display: block;
+    margin: auto;
+}
+
+#thank-gif {
+    background-image: linear-gradient(#202025 58%, #392931);
+}

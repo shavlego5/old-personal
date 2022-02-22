@@ -1,0 +1,230 @@
+body,
+html {
+  overflow: hidden;
+}
+
+#mountain {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #7fb3d5;
+  z-index: 10;
+  overflow: hidden;
+}
+
+#cloud1 {
+  position: absolute;
+  z-index: 110;
+  animation: cloud 10s linear infinite;
+}
+
+#cloud2 {
+  position: absolute;
+  z-index: 110;
+  margin-top: 350px;
+  animation: cloud 18s linear infinite;
+}
+
+#cloud3 {
+  position: absolute;
+  z-index: 100;
+  margin-top: 100px;
+  animation: cloud 50s linear infinite;
+}
+
+#cloud4 {
+  position: absolute;
+  z-index: 100;
+  margin-top: 200px;
+  animation: cloud 15s linear infinite;
+}
+
+#cloud5 {
+  position: absolute;
+  z-index: 100;
+  margin-top: 300px;
+  animation: cloud 45s linear infinite;
+}
+
+#cloud6 {
+  position: absolute;
+  z-index: 100;
+  margin-top: 400px;
+  animation: cloud 20s linear infinite;
+}
+
+#circle {
+  position: absolute;
+  z-index: 110;
+}
+
+#sunshine {
+  background-color: none;
+  position: absolute;
+  z-index: 100;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#sunshine polygon {
+  margin: 100px;
+}
+
+@keyframes cloud {
+  0% {
+    transform: translateX(-400px);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+.sunshine-animation {
+  animation: sunshine 5s linear infinite;
+}
+
+@keyframes sunshine {
+  0% {
+    fill: rgba(247, 220, 111, 0);
+  }
+  10% {
+    fill: rgba(247, 220, 111, 0.1);
+  }
+  20% {
+    fill: rgba(247, 220, 111, 0.2);
+  }
+  30% {
+    fill: rgba(247, 220, 111, 0.3);
+  }
+  40% {
+    fill: rgba(247, 220, 111, 0.4);
+  }
+  50% {
+    fill: rgba(247, 220, 111, 0.5);
+  }
+  60% {
+    fill: rgba(247, 220, 111, 0.4);
+  }
+  70% {
+    fill: rgba(247, 220, 111, 0.3);
+  }
+  80% {
+    fill: rgba(247, 220, 111, 0.2);
+  }
+  90% {
+    fill: rgba(247, 220, 111, 0.1);
+  }
+  100% {
+    fill: rgba(247, 220, 111, 0);
+  }
+}
+
+
+#open-menu {
+    color: white;
+    font-weight: bold;
+    width: 40px;
+    position: fixed;
+    z-index: 1000;
+    top: 30px;
+    left: 30px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  #open-menu:hover {
+    left: 0;
+    width: 100px;
+    transition: 1s;
+  }
+  
+  #open-menu hr {
+    height: 2px;
+    background-color: white;
+    transition: 1s;
+  }
+  
+  #open-menu:hover hr {
+    background-color: #239b56;
+    border-color: #239b56;
+    transition: 1s;
+  }
+  
+  .open-menu-hover {
+    transition: 1s;
+    left: 0px;
+    width: 100px;
+  }
+  
+  .close-menu {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    text-decoration: none;
+    font-size: 40px;
+    color: white;
+  }
+  
+  .close-menu:hover {
+    color: red;
+    transition: 0.5s;
+  }
+  
+  .menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1010;
+    top: 0;
+    left: 0;
+    background-color: #1c2833;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+  }
+  
+  .menu-links {
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    color: #d0d3d4;
+    display: block;
+    position: relative;
+    transition: 2s;
+  }
+  
+  .menu-links:hover {
+    color: #239b56;
+    transition: 1s;
+  }
+  
+  .menu-links::after {
+    bottom: 0;
+    content: "";
+    height: 3px;
+    left: 0;
+    position: absolute;
+    background-color: #d0d3d4;
+    transition: 1s;
+    width: 0;
+  }
+  
+  .menu-links:hover::after {
+    width: 100%;
+    background-color: #239b56;
+  }
+  
+  .menu .closeButton {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 50px;
+    margin-left: 50px;
+  }
+  

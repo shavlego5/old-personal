@@ -1,0 +1,95 @@
+body {
+    cursor: none;
+    overflow-x: hidden;
+}
+
+a {
+    cursor: none;
+}
+
+.cursor {
+    width: 20px;
+    height: 20px;
+    border: 2px solid;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1000;
+    transition: 0;
+    animation: cursorA1nim .5s infinite alternate , cursorBorder 12s linear infinite;
+    pointer-events: none;
+    background-color: rgba(52, 152, 219, 0.5);
+}
+
+@keyframes cursorBorder {
+    0%{border-color: white;}
+    20%{border-color: red;}
+    40%{border-color: green;}
+    60%{border-color: yellow;}
+    80%{border-color: blue;}
+    100%{border-color: purple;}
+}
+
+@keyframes colorCursor {
+    0%{border-color: rgba(241, 196, 15, 0.7);}
+    50%{border-color: rgba(241, 196, 15, 1);}
+    100%{border-color: rgba(241, 196, 15, 0.7);}
+}
+
+.cursor::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border: 8px solid;
+    border-radius: 50%;
+    opacity: .5;
+    top: -8px;
+    left: -8px;
+    animation: cursorAnim12 , colorCursor .5s infinite alternate;
+}
+
+@keyframes cursorAnim {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.7);
+    }
+}
+
+@keyframes cursorAnim2 {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.4);
+    }
+}
+
+@keyframes cursorAnim3 {
+    0% {
+        transform: scale(1);
+        background-color: rgba(203, 67, 53, 1);
+    }
+    50% {
+        transform: scale(3);
+        background-color: rgba(203, 67, 53, 0.5);
+    }
+    100% {
+        transform: scale(1);
+        background-color: rgba(203, 67, 53, 0);
+    }
+}
+
+.expand {
+    animation: cursorAnim3 .5s forwards;
+    border: 1px solid red;
+}
+
+.linkOn {
+    background-color: #E74C3C;
+}
+
+.linkOut {
+    background-color: rgba(46, 134, 193, 0.5);
+}

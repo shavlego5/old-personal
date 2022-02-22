@@ -1,0 +1,17 @@
+#experience {
+    background-color: #0069ff;
+    padding: 90px;
+}
+
+#exp-gif {
+    height: 600px;
+    width: 100%;
+    background-color: #3287ff;
+    padding: 0;
+    margin: auto;
+}
+
+#exp-gif img {
+    display: block;
+    margin: -10px auto;
+}
