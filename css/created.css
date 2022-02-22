@@ -1,0 +1,54 @@
+/*created by me */
+
+#created {
+    background-color: #202025;
+    margin: 0;
+    padding: 0;
+    padding-top: 50px;
+  }
+  
+  #crea {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  #crea a {
+    max-width: 300px;
+    height: 200px;
+    cursor: pointer;
+    margin-bottom: 50px;
+    margin-top: 120px;
+    transition: 1s; 
+  }
+  
+  .creat {
+    max-width: 300px;
+    height: 200px;
+    cursor: none;
+    margin-bottom: 50px;
+    transition: 1s;
+  }
+  
+  .creat:hover {
+    -webkit-box-shadow: 14px 14px 11px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 14px 14px 11px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 14px 14px 11px 0px rgba(0, 0, 0, 0.75);
+    transition: 1s;
+  }
+
+  #created1:hover {
+    transform: translate(-20px);
+  }
+
+  #created2:hover {
+    transform: translateY(70px);
+  }
+
+  #created3:hover {
+    transform: translateY(-70px);
+  }
+
+  #created4:hover {
+    transform: translate(20px);
+  }

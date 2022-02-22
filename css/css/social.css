@@ -1,0 +1,41 @@
+#fb {
+    position: fixed;
+    right: 40px;
+    top: 30px;
+    color: white;
+    font-size: 38px;
+    padding: 10px 15px;
+    border-radius: 50%;
+    transition: 1s;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+#fb:hover {
+    border-radius: 16px;
+    background-color: #F4D03F;
+    color: #0c49aa;
+    transition: 1s;
+}
+
+#facebook {
+    position: fixed;
+    right: 30px;
+    top: 100px;
+}
+
+.accordion {
+    cursor: none;
+    width: 50px;
+    border: none;
+    text-align: center;
+    outline: none;
+    background: none;
+    transition: 1s;
+  }
+  .panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
