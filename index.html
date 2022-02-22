@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Shavlego Botchorishvili</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="css/background.css" />
+    <link rel="stylesheet" href="css/shavlego.css" />
+    <link rel="stylesheet" href="css/about-me.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/knowledge.css" />
+    <link rel="stylesheet" href="css/thank.css" />
+    <link rel="stylesheet" href="css/skills.css" />
+    <link rel="stylesheet" href="css/experience.css" />
+    <link rel="stylesheet" href="css/cursor.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/created.css" />
+    <link rel="stylesheet" href="css/scrollbar.css" />
+    <link rel="stylesheet" href="css/image.css" />
+    <link rel="stylesheet" href="css/social.css" />
+</head>
+
+<body onresize="changeScreen()">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0"></script>
+
+    <button class="accordion" id="fb" onclick="showFB()"><i class="fa fa-facebook""></i></button>
+    <div class="panel" id="facebook">
+        <div class="fb-like" data-href="https://shavlego-botchorishvili.ge/ " data-width="20" data-layout="box_count" data-action="like" data-size="large" data-share="true"></div>
+        <a id="visit" href="https://www.facebook.com/shavlego.bochorishvili?ref=bookmarks" target="_blank">Visit</a>
+    </div>
+
+    <div id="menu" class="menu">
+        <a class="close-menu" href="javascript:void(0)" onclick="closeMenu()" onmouseover="linkOn()" onmouseout="linkOut()">&times;</a
+      >
+      <a
+        class="menu-links"
+        href="home.html"
+        onmouseover="linkOn()"
+        onmouseout="linkOut()"
+        >Home</a
+      >
+      <a
+        class="menu-links"
+        href="#about-me"
+        onmouseover="linkOn()"
+        onmouseout="linkOut()"
+        >About Me</a
+      >
+      <a
+        class="menu-links"
+        href="#knowledge"
+        onmouseover="linkOn()"
+        onmouseout="linkOut()"
+        >Education</a
+      >
+      <a
+      class="menu-links"
+      href="#experience"
+      onmouseover="linkOn()"
+      onmouseout="linkOut()"
+      >Experience</a
+    >
+      <a
+        class="menu-links"
+        href="#skills"
+        onmouseover="linkOn()"
+        onmouseout="linkOut()"
+        >Skills</a
+      >
+      <a
+        class="menu-links"
+        href="#created"
+        onmouseover="linkOn()"
+        onmouseout="linkOut()"
+        >Created By Me</a
+      >
+      <a
+        class="menu-links"
+        href="#thank"
+        onmouseover="linkOn()"
+        onmouseout="linkOut()"
+        >Thank You!</a
+      >
+      <img src="images/tenor.gif">
+    </div>
+    <span
+      id="open-menu"
+      onclick="openMenu()"
+      onmouseover="linkOn()"
+      onmouseout="linkOut()"
+      ><hr />
+      <hr />
+      <hr
+    /></span>
+
+    <div id="top">
+      <h1 id="hi">HI!</h1>
+      <h1 id="welcome" class="font-effect-fire-animation">
+        WELCOME TO MY PERSONAL SITE!
+      </h1>
+    </div>
+    <div id="fixed-left">
+      <div id="name">
+        <a onclick="showModal()"
+          onmouseover="linkOn()"
+          onmouseout="linkOut()"
+        >
+          <h3 id="firstname">SHAVLEGO</h3>
+          <h3 id="lastname">BOTCHORISHVILI</h3>
+        </a>
+    </div>
+    </div>
+
+    <div id="modal-image">
+        <span class="close" onclick="hideModal()">&times;</span>
+        <img class="modal-content" src="images/aboutMe.jpg" id="profile-image">
+    </div>
+
+    <div id="fixed-right"></div>
+
+    <div id="about-me">
+        <div class="titel">
+            <hr class="left-hr" />
+            <h1>ABOUT ME</h1>
+            <hr class="right-hr" />
+        </div>
+
+        <div id="about-content">
+            <div id="about-text">
+                <div id="about-flex">
+                    <p>
+                        I am shavlego botchorishvili, economist and
+                        <span>Front-End</span> developer. Economics is my first profession, but I have always been addicted to development since childhood, so i decided to make my dreams come true and now, I am sertificated
+                        <span>Front-End</span> developer with a great motivation, power and
+                        <a href="#knowledge" id="about-knowledge" onmouseover="linkOn()" onmouseout="linkOut()">knowledge</a
+                >. I'm still improving my
+                <a
+                  href="#skills"
+                  id="about-skills"
+                  onmouseover="linkOn()"
+                  onmouseout="linkOut()"
+                  >skills</a
+                >
+                every day to become the Best one.
+              </p>
+              <p>
+                Working on difficult logics, writing codes and making good sites is
+                my professional ambition. Besides, I am a hardworker and would be
+                delighted to work in a company , where I can identify my
+                opportunities and get a good
+                <a
+                  href="#experience"
+                  id="about-experience"
+                  onmouseover="linkOn()"
+                  onmouseout="linkOut()"
+                  >experience</a
+                >.
+              </p>
+          </div>
+          <div id="about-flex">
+            <p>
+                To illustrate my abilities, here you can see some of
+                <a
+                  href="#created"
+                  id="about-created"
+                  onmouseover="linkOn()"
+                  onmouseout="linkOut()"
+                  >my creations</a
+                >. I hope you enjoy it !
+              </p>
+              <div id="about-gif">
+                <img src="images/focus-animation_bcba3d519ff8406664b93fe49a8fa2e8.gif" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="knowledge">
+      <div class="titel">
+        <hr class="left-hr" />
+        <h1>KNOWLEDGE</h1>
+        <hr class="right-hr" />
+      </div>
+
+      <dl class="aphorism">
+        <dd>Knowledge is like money: the more he gets, the more he craves.</dd>
+        <dt id="myBtn" onmouseover="linkOn()" onmouseout="linkOut()">
+          <a href="https://en.wikipedia.org/wiki/Josh_Billings" target="_blank"
+            >Henry Wheeler Shaw</a
+          >
+        </dt>
+      </dl>
+
+      <div id="knowledge-content">
+        <div class="knowledge-explain">
+          <p class="year">1997&#9472;2004/2006&#9472;2009</p>
+          <hr class="xazi" id="xazi1" onmouseover="xaziAdd1()" onmouseout="xaziRemove1()"/>
+          <div class="name-city">
+            <p class="city">Georgia, Terjola</p>
+            <p class="school">Terjola Public School &#8470;2</p>
+          </div>
+        </div>
+        <div class="knowledge-explain">
+          <p class="year">2004&#9472;2006</p>
+          <hr class="xazi" id="xazi2" onmouseover="xaziAdd2()" onmouseout="xaziRemove2()" />
+          <div class="name-city">
+            <p class="city">Georgia, Tbilisi</p>
+            <p class="school">
+              Tbilisi Public School &#8470;199 of Physics and Mathematics
+            </p>
+          </div>
+        </div>
+        <div class="knowledge-explain">
+          <p class="year">2009&#9472;2014</p>
+          <hr class="xazi" id="xazi3" onmouseover="xaziAdd3()" onmouseout="xaziRemove3()" />
+          <div class="name-city">
+            <div class="degree">
+              <p class="city">Georgia, Tbilisi</p>
+              <p class="bachelor">Bachelor of Economics and Business</p>
+            </div>
+            <p class="school">I. Javakhishvili Tbilisi State University</p>
+          </div>
+        </div>
+        <div class="knowledge-explain">
+          <p class="year">2016 March&#9472;September</p>
+          <hr class="xazi" id="xazi4" onmouseover="xaziAdd4()" onmouseout="xaziRemove4()" />
+          <div class="name-city">
+            <div class="degree">
+              <p class="city">German, Stuttgart</p>
+              <p class="bachelor">German language course B2 / C1</p>
+            </div>
+            <p class="school">
+              International Center (IZ) &#9472; University of Stuttgart
+            </p>
+          </div>
+        </div>
+        <div class="knowledge-explain">
+          <p class="year">2016&#9472;2018</p>
+          <hr class="xazi" id="xazi5" onmouseover="xaziAdd5()" onmouseout="xaziRemove5()" />
+          <div class="name-city">
+            <div class="degree">
+              <p class="city">German, Stuttgart</p>
+              <p class="bachelor">
+                Bachelor of Electrical Engineering and Information Technologies
+              </p>
+            </div>
+            <p class="school">University of Stuttgart</p>
+          </div>
+        </div>
+        <div class="knowledge-explain">
+          <p class="year">2019 March&#9472;October</p>
+          <hr class="xazi" id="xazi6" onmouseover="xaziAdd6()" onmouseout="xaziRemove6()" />
+          <div class="name-city">
+            <div class="degree">
+              <p class="city">Georgia, Tbilisi</p>
+              <p class="bachelor">Html / Css / JavaScript / React.js</p>
+            </div>
+            <p class="school">Techub / (BTU) Front&#9472;end course</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="experience">
+      <div class="titel">
+        <hr class="left-hr" />
+        <h1>EXPERIENCE</h1>
+        <hr class="right-hr" />
+      </div>
+
+      <dl class="aphorism">
+        <dd>
+          Experience without theory is blind, but theory without experience is
+          mere intellectual play.
+        </dd>
+        <dt onmouseover="linkOn()" onmouseout="linkOut()">
+          <a href="https://en.wikipedia.org/wiki/Immanuel_Kant" target="_blank"
+            >Immanuel Kant</a
+          >
+        </dt>
+      </dl>
+    </div>
+
+    <div id="exp-gif">
+      <img src="images/true_astronaut_dribbble-bg.gif" />
+    </div>
+
+    <div id="skills">
+      <div class="titel">
+        <hr class="left-hr" />
+        <h1>SKILLS</h1>
+        <hr class="right-hr" />
+      </div>
+
+      <div id="skills-indicators">
+        <svg>
+          <circle
+            id="circle-middle"
+            cx="420"
+            cy="350"
+            r="100"
+            fill="#ECF0F1"
+            stroke="#F7DC6F"
+          ></circle>
+          <text class="skill-text" id="html" x="380" y="360">
+            HTML
+          </text>
+
+          <circle
+            id="circle-left-top"
+            cx="242"
+            cy="110"
+            r="100"
+            fill="#ECF0F1"
+          >
+          </circle>
+
+          <text class="skill-text" id="css" x="212" y="120">
+            CSS
+          </text>
+
+          <circle
+            id="circle-right-top"
+            cx="600"
+            cy="110"
+            r="100"
+            fill="#ECF0F1"
+          >
+          </circle>
+          <text id="js" class="skill-text" id="css" x="580" y="120">
+            JS
+          </text>
+
+          <circle
+            id="circle-middle-left"
+            cx="130"
+            cy="350"
+            r="100"
+            fill="#ECF0F1"
+          >
+          </circle>
+          <text id="react" class="skill-text" id="css" x="90" y="360">
+            React
+          </text>
+
+          <circle
+            id="circle-middle-right"
+            cx="720"
+            cy="350"
+            r="100"
+            fill="#ECF0F1"
+          >
+          </circle>
+          <text id="jquery" class="skill-text" id="css" x="680" y="360">
+            jQuery
+          </text>
+
+          <circle
+            id="circle-bottom-left"
+            cx="242"
+            cy="600"
+            r="100"
+            fill="#ECF0F1"
+          >
+          </circle>
+          <text id="svg" class="skill-text" id="css" x="212" y="610">
+            SVG
+          </text>
+
+          <circle
+            id="circle-bottom-right"
+            cx="600"
+            cy="600"
+            r="100"
+            fill="#ECF0F1"
+          ></circle>
+          <text id="scss" class="skill-text" id="css" x="570" y="610">
+            SCSS
+          </text>
+
+        </svg>
+      </div>
+    </div>
+     <!--created-->
+     <div id="created">
+        <div class="titel">
+            <hr class="left-hr" />
+            <h1>CREATED BY ME</h1>
+            <hr class="right-hr" />
+          </div>
+        <div id="crea">
+          <a id="created1" href="createdFromMe/svg.html" target="_blank" onmouseover="linkOn()"
+          onmouseout="linkOut()"
+            ><img class="creat" src="images/created1.jpg" alt=""
+          /></a>
+                        <a id="created3" href="#" onmouseover="linkOn()" onmouseout="linkOut()"><img class="creat" src="images/this.png" alt="" /></a>
+                        <a id="created2" href="js/mountain.html" target="_blank" onmouseover="linkOn()" onmouseout="linkOut()"><img class="creat" src="images/created2.jpg" alt="" /></a>
+                        <!-- <a id="created4" href="registration/index.html"  target="_blank" onmouseover="linkOn()"
+          onmouseout="linkOut()"
+            ><img class="creat" src="images/login.jpg" alt=""
+          /></a> -->
+                        
+                </div>
+            </div>
+
+            <div id="thank-gif">
+                <img src="images/da8f7a76718200a523a773452742d20f.gif" />
+            </div>
+
+            <div id="thank">
+                <h1>Thank You!</h1>
+                <p>
+                    thank you for visiting my website
+                </p>
+                <p>
+                    i hope you enjoy it
+                </p>
+            </div>
+
+            <div class="cursor"></div>
+
+            <footer>
+                <svg id="footer11">
+         <polyline id="footer1" fill="#616A6B" stroke="#616A6B"></polyline>
+         <polyline id="footer2" fill="#17202A" stroke="#17202A"></polyline>
+
+         <text id="text">
+          &copy; 2020 <a onmouseover="linkOn()"
+            onmouseout="linkOut()"
+            href="https://www.facebook.com/shavlego.bochorishvili" target="_blank">Shavlego Botchorishvili</a>
+         </text>
+      </svg>
+            </footer>
+
+            <script src="js/menu.js"></script>
+            <script src="js/smooty-scroll.js"></script>
+            <script src="js/cursor.js"></script>
+            <script src="js/skills.js"></script>
+            <script src="js/thank.js"></script>
+            <script src="js/knowledge.js"></script>
+            <script src="js/image.js"></script>
+            <script src="js/social.js"></script>
+            <script src="js/footer.js"></script>
+</body>
+
+</html>
